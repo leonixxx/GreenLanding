@@ -1,6 +1,7 @@
 .services {
 	margin-left: clamp(80px, 8.6vw, 135px);
 	margin-top: clamp(60px, 10vh, 100px);
+	margin-bottom: clamp(60px, 10vh, 100px);
 }
 .services__inner {
 	display: flex;
@@ -12,13 +13,10 @@
 	font-family: "Ruberoid", sans-serif;
 	font-size: 45px;
 	font-style: normal;
-	font-weight: 400;
+	font-weight: bold;
 	line-height: 60px; /* 133.333% */
 	display: block;
 	margin-bottom: 10px;
-}
-.services__title2 {
-	margin-bottom: 25px;
 }
 .services__right {
 	width: 450px;
@@ -28,6 +26,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 25px;
 }
 .services__line {
 	width: 245px;
@@ -73,13 +72,12 @@
 .services__left--change1 {
 	border-radius: 40px 0px 0px 0px;
 	background: #fff;
-	color: #7CA281;
+	color: #7ca281;
 }
 .services__left--change2 {
 	border-radius: 0px 0px 0px 40px;
 	background: #fff;
-	color: #7CA281;
-	
+	color: #7ca281;
 }
 .services__left--Active {
 	background: #5ccd6a;
@@ -87,7 +85,7 @@
 	color: #fff;
 }
 .services__left--changeText {
-	display: flex; 
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-top: 90px;
@@ -149,4 +147,96 @@
 }
 /* ПОсле ТАБА */
 
-
+.services__solution {
+	width: 869px;
+	margin-top: clamp(60px, 9.5vh, 100px);
+	color: #495e4c;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 45px;
+	font-style: bold;
+	font-weight: 400;
+	line-height: 60px; /* 133.333% */
+	text-transform: capitalize;
+	margin-bottom: clamp(50px, 8.5vh, 85px);
+}
+.services__solution--inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.services__solution--line {
+	width: 236px;
+	height: 3px;
+	border-radius: 1.5px;
+	background: var(--unnamed, #78c081);
+}
+/* КАРТОЧКИ */
+.services__cardsWrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: clamp(20px, 3.4vh, 35px);
+	z-index: 2;
+}
+.services__cardsInner {
+	width: 257px;
+	height: 147px;
+	background: #fff;
+	backdrop-filter: blur(1px);
+	color: #78c081;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	box-shadow: 0px 2px 4px 0px rgba(46, 35, 25, 0.3);
+	border-radius: 25px;
+	/* background: url(../img/servic/BigCardsImg.svg),	lightgray -24.48px -36.821px / 110.895% 206.791% no-repeat; */
+}
+.services__cards--price {
+	color: #495d4c;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	width: 119px;
+	height: 28px;
+	border-radius: 0px 10px 10px 0px;
+	background: #d9fadd;
+	position: relative;
+	top: -105px;
+}
+.fivecards {
+	top: -125px;
+}
+.services__cards__text {
+	margin-left: 17px;
+}
+.services__bigImg {
+	float: left;
+	z-index: -1;
+	margin-left: -135px;
+	margin-top: -450px;
+}
+.services__topflowers {
+	float: left;
+	margin-left: 75px;
+	margin-top: -405px;
+	z-index: -1;
+}
+.services__bottomflowers {
+	float: right;
+	margin-top: -190px;
+	margin-right: -25px;
+	z-index: -1;
+}
+.services__flowers {
+	z-index: -1;
+	margin-top: -35px;
+	margin-left: 105px;
+}
+.services__flowers2 {
+	position: relative;
+	z-index: 1;
+	top: -350px;
+	margin-left: 1290px;
+}
