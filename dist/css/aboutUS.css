@@ -1,0 +1,105 @@
+.us {
+	font-family: "Proxima Nova Rg", sans-serif;
+	margin-left: clamp(80px, 8.6vw, 135px);
+	margin-right: clamp(80px, 5.6vw, 60px);
+	margin-top: clamp(60px, 10vh, 100px);
+	display: flex;
+	gap: clamp(40px, 6.7vw, 100px);
+}
+.us__left {
+	width: 531px;
+	height: calc(580px - 66px);
+	border-radius: 50px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+	padding: 33px 0 50px 45px;
+}
+.us__left__wrapper {
+	width: 590px;
+	background: rgba(186, 255, 195, 0.25);
+	height: 620px;
+	display: flex;
+	border-radius: 52px;
+	justify-content: center;
+	align-items: center;
+}
+.us__leftTitle {
+	display: flex;
+	gap: 15px;
+	align-items: center;
+}
+.us__left--line {
+	color: #78c081;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: uppercase;
+	/* text-decoration: underline; */
+	border-bottom: 1.5px solid #78c081;
+}
+.us__leftTitle--text {
+	color: #495e4c;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px; /* 133.333% */
+	text-transform: capitalize;
+}
+.us_left--text {
+	margin-top: 20px;
+	width: 441px;
+	color: #848484;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+}
+.bold {
+	font-weight: 600;
+}
+.us__right {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, 200px);
+	column-gap: 35px;
+	align-items: end;
+}
+.us__cards {
+	color: #78c081;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url(../img/US/FonLittle.svg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+.us__cards--number {
+	font-family: "Ruberoid", sans-serif;
+	text-align: center;
+	font-size: 35px;
+	text-transform: capitalize;
+}
+.us__cards--title {
+	font-family: "Ruberoid", sans-serif;
+	font-size: 24px;
+	display: flex;
+	align-items: end;
+	gap: 10px;
+}
+.us__cards--text {
+	color: #7ca381;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	width: 198px;
+}

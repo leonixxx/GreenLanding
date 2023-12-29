@@ -1,7 +1,7 @@
 .services {
 	margin-left: clamp(80px, 8.6vw, 135px);
 	margin-top: clamp(60px, 10vh, 100px);
-	margin-bottom: clamp(60px, 10vh, 100px);
+	/* margin-bottom: clamp(60px, 10vh, 100px); */
 }
 .services__inner {
 	display: flex;
@@ -174,8 +174,9 @@
 .services__cardsWrapper {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: clamp(20px, 3.4vh, 35px);
+	row-gap: clamp(20px, 3.4vh, 35px);
 	z-index: 2;
+	margin-right: clamp(0px, 8vh, 80px);
 }
 .services__cardsInner {
 	width: 257px;
@@ -238,5 +239,182 @@
 	position: relative;
 	z-index: 1;
 	top: -350px;
-	margin-left: 1290px;
+	margin-left: 1190px;
+}
+/* 3 простых ШАГА */
+.steps__title--wrapper {
+	/* margin-top: clamp(30px, 5.5vh, 55px); */
+	width: 525px;
+	font-family: "Ruberoid", sans-serif;
+	color: #495e4c;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px; /* 133.333% */
+	text-transform: capitalize;
+}
+.steps__line {
+	border-radius: 1.5px;
+	background: var(--unnamed, #78c081);
+	width: 100px;
+	height: 2px;
+}
+.steps__line--wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.steps__inner {
+	display: flex;
+	justify-content: space-between;
+	margin-right: clamp(40px, 10.5vh, 105px);
+}
+.steps_opinion {
+	color: #7ca381;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+.opinion__title {
+	font-size: 26px;
+	text-transform: capitalize;
+	margin-bottom: 12px;
+}
+.opinion__text::before {
+	content: "";
+	display: block;
+	width: 17px;
+	height: 17px;
+	background-image: url("../img/servic/stepsIcons.svg");
+	position: relative;
+	left: -25px;
+	top: 20px;
+}
+.opinion__text {
+	display: block;
+	width: 570px;
+	/* margin-bottom: 10px; */
+}
+.steps__Img--wrapper {
+	margin-left: -135px;
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: clamp(40px, 8vh, 80px);
+}
+.steps__Img--circle {
+	width: 100px;
+	height: 100px;
+	background-color: #d9fadd;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.firstLine {
+	position: relative;
+	left: -105px;
+	top: -115px;
+}
+.secondLine {
+	position: relative;
+	top: -140px;
+	left: -10px;
+}
+.thirdLine {
+	position: relative;
+	top: -105px;
+	left: 85px;
+}
+.forthLine {
+	position: relative;
+	top: -155px;
+	left: 175px;
+}
+.steps__Img--wrapper2 p {
+	margin-top: 20px;
+	color: #495e4c;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+.steps__Img--wrapper2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* ЗАЯВКА */
+
+.request {
+	padding-left: 135px;
+	/* padding-top: 55px; */
+}
+.request__test {
+	color: #495e4c;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 45px;
+	padding-bottom: 33px;
+}
+.request__form {
+	display: flex;
+	align-items: center;
+}
+.request__name {
+	border: none;
+	border-radius: 15px;
+	background: #fff;
+	box-shadow: 0px 0px 12px 0px rgba(73, 93, 76, 0.15);
+	width: 250px;
+	height: 17px;
+	padding: 20px;
+	margin-right: 30px;
+	font-size: 18px;
+}
+.request__btn--conteiner {
+	border-radius: 17px;
+	background: #9cd3a3;
+	width: 209px;
+	height: 55px;
+	box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+	color: #fff;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.request__btn--conteiner:hover {
+	background: #54E165;
+}
+.request__btn {
+	border-radius: 20px;
+	background-color: rgb(120, 192, 129, 0.25);
+	width: 229px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 30px;
+}
+.request__wrapper {
+	margin-top: 100px;
+	margin-left: -135px;
+	/* padding-left: 135px; */
+	/* padding-top: 55px; */
+	width: 1440px;
+	height: 248px;
+	background: #d9fadd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
