@@ -1,0 +1,81 @@
+.modal__text {
+	color: #7ca381;
+	font-size: 16px;
+	line-height: 26px;
+	padding-top: 35px;
+	padding-bottom: 20px;
+}
+.modal__text1 {
+	color: #7ca381;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+}
+.modal__day {
+	margin-top: 15px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.modal__day-text {
+	color: #7ca381;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+}
+.modal__phone--wrapper {
+	margin-top: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-right: 35px;
+}
+.modal__phone {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.modal__phone--number {
+	color: #7b897d;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+}
+.modal_btn {
+    position: absolute;
+    top: 210px;
+    left: 940px;
+    z-index: 7;
+}
+.modal_btn__text {
+	border-radius: 15px;
+	background: #5ccd6a;
+	width: 53px;
+	height: 49px;
+	box-shadow: 2px -2px 12px 0px rgba(34, 111, 33, 0.36) inset;
+}
+.modal_btn__wrapper {
+	border-radius: 18px;
+	background: rgba(120, 192, 129, 0.25);
+	width: 73px;
+	height: 69px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.modal_btn__text:hover {
+    background: #54E165;
+}
+.modal__open {
+    overflow: hidden;
+    height: 100%;
+}
+.modal__MAIN {
+	opacity: 0; /* Устанавливаем начальную непрозрачность */
+	visibility: hidden; /* Скрываем элемент */
+	transition: opacity 0.3s ease, visibility 0.3s ease; /* Добавляем плавный переход */
+}
+.modal__MAIN.active {
+	opacity: 1; /* При добавлении класса .active устанавливаем полную непрозрачность */
+	visibility: visible; /* Показываем элемент */
+}

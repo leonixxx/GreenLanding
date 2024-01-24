@@ -1,0 +1,72 @@
+.client {
+	font-family: "Proxima Nova Rg", sans-serif;
+	width: 1440px;
+	height: 515px;
+	fill: #d9fadd;
+	background: url(../img/Portfolio/FonCli.svg);
+	background-repeat: repeat;
+	margin-top: -800px;
+}
+.clients {
+	margin-left: clamp(80px, 8.6vw, 135px);
+	/* margin-right: clamp(80px, 8.6vw, 135px); */
+	display: flex;
+	padding-top: 156px;
+}
+.clients__info {
+}
+.clients__title {
+	color: #495e4c;
+	font-family: "Ruberoid", sans-serif;
+	font-size: 45px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 60px; /* 133.333% */
+	text-transform: capitalize;
+}
+.clients__frstTitle {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 630px;
+}
+.clients__line {
+	border-radius: 1.5px;
+	background: var(--unnamed, #78c081);
+	width: 105px;
+	height: 2px;
+}
+
+.clients__text {
+	width: 627px;
+	color: #848484;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+	margin-top: 25px;
+}
+.clients__slider-wrapper {
+	margin-top: 90px;
+}
+.clients__slider {
+	display: flex;
+	gap: 20px;
+	margin-left: 71px;
+	/* justify-content:space-around; */
+}
+.clients__slider--cards {
+	width: 258px;
+	height: 116px;
+	border-radius: 30px;
+	background: #fefffe;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.clients__btn {
+	display: flex;
+	gap: 35px;
+	margin-top: 25px;
+	margin-left: 450px;
+}

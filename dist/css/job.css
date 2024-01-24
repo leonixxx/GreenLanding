@@ -1,0 +1,128 @@
+.job {
+	font-family: "Proxima Nova Rg", sans-serif;
+	margin-left: clamp(80px, 8.6vw, 135px);
+	margin-right: clamp(80px, 8.6vw, 135px);
+	margin-top: clamp(60px, 10vh, 100px);
+}
+.job__inner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.job__cards--title {
+	font-family: "Ruberoid", sans-serif;
+	color: var(--unnamed, #78c081);
+	font-size: 35px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	text-transform: capitalize;
+	margin-bottom: 15px;
+}
+.job__cards-text {
+	display: block;
+	width: 486px;
+	color: #495e4c;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 26px;
+}
+.kons {
+	width: 540px;
+	text-align: right;
+}
+.graf {
+	width: 625px;
+	text-align: right;
+}
+.right {
+	float: right;
+}
+.mont {
+	text-align: right;
+	width: 387px;
+}
+.first_step {
+	margin-top: 90px;
+}
+#first-card {
+	background-image: url(../img/job/1.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 50px;
+	height: 186px;
+}
+#second-card {
+	background-image: url(../img/job/2.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 50px;
+	height: 186px;
+}
+#third-card {
+	background-image: url(../img/job/3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 60px;
+	height: 186px;
+}
+#forst-card {
+	background-image: url(../img/job/4.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 50px;
+	height: 186px;
+}
+#five-card {
+	background-image: url(../img/job/5.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-top: 60px;
+	height: 186px;
+}
+#six-card {
+	background-image: url(../img/job/6.svg);
+	background-repeat: no-repeat;
+	background-position: 80px;
+	padding-top: 60px;
+	height: 186px;
+}
+.line1 {
+	position: relative;
+	top: -980px;
+	left: 180px;
+}
+.line2 {
+	position: relative;
+	top: -850px;
+	left: -54px;
+	transform: rotate(-12.504deg);
+}
+.line3 {
+	position: relative;
+	top: -630px;
+	left: -550px;
+	transform: rotate(-12.504deg);
+}
+.line4 {
+	position: relative;
+	top: -570px;
+	left: 430px;
+	transform: rotate(-4.504deg);
+}
+.line5 {
+	position: relative;
+	top: -410px;
+	left: -280px;
+}
+
+.job__end {
+	height: 99px;
+	margin-top: clamp(30px, 5vh, 50px);
+	display: flex;
+	justify-content: center;
+	background-image: url(../img/job/7.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-bottom: 0;
+}

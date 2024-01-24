@@ -2,6 +2,7 @@
 	margin-left: clamp(80px, 8.6vw, 135px);
 	margin-top: clamp(60px, 10vh, 100px);
 	/* margin-bottom: clamp(60px, 10vh, 100px); */
+	font-family: "Proxima Nova";
 }
 .services__inner {
 	display: flex;
@@ -394,7 +395,7 @@
 	align-items: center;
 }
 .request__btn--conteiner:hover {
-	background: #54E165;
+	background: #54e165;
 }
 .request__btn {
 	border-radius: 20px;
@@ -418,3 +419,12 @@
 	justify-content: space-between;
 	align-items: center;
 }
+.green-change1 {
+	color: #54E165;
+}
+/* .services__ventl-2st:hover {
+	color: #54E165;
+}
+.services__leftLittle--icons:hover {
+	background-color: #54E165;
+} */

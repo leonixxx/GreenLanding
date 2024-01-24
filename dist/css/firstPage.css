@@ -25,6 +25,10 @@
 	display: flex;
 	gap: 40px;
 }
+.menu__list a {
+	text-decoration: none;
+	color: #495e4c;
+}
 .connection {
 	width: 210px;
 	height: 75px;
@@ -113,20 +117,26 @@
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px;
-	display: flex;
-	width: 600px;
-	justify-content: end;
 }
 .firstPage__contact {
 	display: flex;
+	align-items: center;
 	color: #7b897d;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 400;
 	line-height: 24px;
+	margin-top: 52px;
+}
+.firstPage__phone--wrapper1 {
+	display: flex;
+	align-items: center;
+}
+.firstPage__contact--phone {
+	margin-right: 22px;
 }
 .firstPage__contact--geo {
-	padding-right: 8px;
+	padding-right: 20px;
 }
 .firstPage__contact--geoText {
 	display: block;
@@ -151,4 +161,15 @@
 }
 .Application__btn {
 	font-size: 17px;
+}
+
+/* ДОП стили для липкого хедера */
+.fixed__header {
+	width: 1440px;
+	height: 114px;
+	border-radius: 0px 0px 70px 70px;
+	background: #d9fadd;
+	position: fixed;
+	top: 0;
+	z-index: 1100;
 }

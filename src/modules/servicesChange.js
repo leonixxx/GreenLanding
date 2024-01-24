@@ -3,7 +3,9 @@ export function servicesChange() {
         firstlittleConteiner = document.querySelector('.services__left--change1'),
         secondlittleConteiner = document.querySelector('.services__left--change2'),
         icons = document.querySelectorAll('.services__leftLittle--icons'),
-        resetConteiner = document.querySelector('.services__left--wrapper')
+        resetConteiner = document.querySelector('.services__left--wrapper'),
+        active2 = document.querySelectorAll('.active2'), 
+        active1 = document.querySelectorAll('.active1')
 
     changeBtn.addEventListener('click', (e) => {
         if (!e.target.classList.contains('services__left--Active') || !e.target.parentNode.classList.contains('services__left--Active') || !e.target.parentNode.parentNode.classList.contains('services__left--Active')) {
@@ -14,7 +16,31 @@ export function servicesChange() {
                 renderPage(2)
             }
     }})
-    
+    ActiveRemove(active1, '1')
+    secondlittleConteiner.addEventListener('mouseover', (e) => {
+        if(!e.target.classList.contains('services__left--Active') && e.target.classList.contains('active2')) {
+            secondlittleConteiner.classList.add('green-change1')
+            icons[1].src = 'http://127.0.0.1:5500/dist/img/servic/Green-Logo_conder.svg'
+        }
+    });
+    secondlittleConteiner.addEventListener('mouseout', (e) => {
+        if(!e.target.classList.contains('services__left--Active')  && e.target.classList.contains('active2')) {
+            secondlittleConteiner.classList.remove('green-change1')
+            icons[1].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons2.svg'
+        }
+    })
+    firstlittleConteiner.addEventListener('mouseover', (e) => {
+        if(!e.target.classList.contains('services__left--Active') && e.target.classList.contains('active1')) {
+            firstlittleConteiner.classList.add('green-change1')
+            icons[0].src = 'http://127.0.0.1:5500/dist/img/servic/GGGreeen.svg'
+        }
+    });
+    firstlittleConteiner.addEventListener('mouseout', (e) => {
+        if(!e.target.classList.contains('services__left--Active')  && e.target.classList.contains('active1')) {
+            firstlittleConteiner.classList.remove('green-change1')
+            icons[0].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons1_1.svg'
+        }
+    })
 
 
     function renderPage(a) {
@@ -24,6 +50,9 @@ export function servicesChange() {
             secondlittleConteiner.classList.remove('services__left--Active')
             icons[0].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons1.svg'
             icons[1].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons2.svg'
+            firstlittleConteiner.classList.remove('green-change1')
+            ActiveRemove(active1, '1')
+            ActiveActive(active2, '2')
         }
         else if (a === 2) {
             resetConteiner.innerHTML = a2
@@ -31,8 +60,22 @@ export function servicesChange() {
             firstlittleConteiner.classList.remove('services__left--Active')
             icons[0].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons1_1.svg'
             icons[1].src = 'http://127.0.0.1:5500/dist/img/servic/changeIcons1_2.svg'
+            secondlittleConteiner.classList.remove('green-change1')
+            ActiveActive(active1, '1')
+            ActiveRemove(active2, '2')
         }
     }
+    function ActiveRemove(array, num) {
+        array.forEach(item => {
+            item.classList.remove('active' + num)
+        })
+    }
+    function ActiveActive(array, num) {
+        array.forEach(item => {
+            item.classList.add('active' + num)
+        })
+    }
+
     let a2 = `<div class="services__leftIcons--wrapper">
     <ul class="services__left--list">
         <li class="left1">
