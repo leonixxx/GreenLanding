@@ -12,16 +12,32 @@
 @import url(footer.css);
 @import url(request.css);
 @import url(modal.css);
-
+@import url(mediaPhone.css);
 
 body {
 	background-color: #f5f5f5;
 }
 .mainWrapper {
-	width: clamp(800px, 100%, 1440px);
+	width: clamp(600px, 100%, 1440px);
 	margin: auto;
 	background-color: #f5f5f5;
 	font-family: "Proxima Nova Rg", sans-serif;
+}
+@media (max-width: 600px) {
+	.mainWrapper {
+		width: calc(100% - 56px);
+		background: linear-gradient(
+			180deg,
+			#f2f2f2 0.09%,
+			#f0f2f1 17.41%,
+			#efefef 35.53%,
+			#eaeceb 51.42%,
+			#e7e8ea 66.94%,
+			#e2e6e5 82.21%,
+			#dee2e1 99.91%
+		);
+		margin: 0;
+		padding: 28px;
+	}
 	
 }
-

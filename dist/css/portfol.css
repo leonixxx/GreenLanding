@@ -38,35 +38,40 @@
 	margin-right: 37px;
 	margin-bottom: 30px;
 }
-.portfolio__cards1 {
-	width: 500px;
-	height: 456px;
-	border-radius: 35px;
-	background: url(../img/Portfolio/frst.png),
-		lightgray 0px -34.039px / 100% 146.199% no-repeat;
-        z-index: 1;
-}
-.portf__slider {
-	display: flex;
-	gap: 30px;
-}
 .portfolio__cards {
 	width: 270px;
 	height: 456px;
 	border-radius: 35px;
     z-index: 1;
 }
+.portfolio__cards1 {
+	width: 270px;
+	height: 456px;
+	border-radius: 35px;
+	background: url(../img/Portfolio/frst.png),
+		lightgray 0px -34.039px / 100% 146.199% no-repeat;
+    z-index: 1;
+	background-size: cover;
+}
+.portf__slider {
+	display: flex;
+	gap: 30px;
+}
+
 .secondImg {
 	background: url(../img/Portfolio/sec.png),
 		lightgray -77.129px -92px / 177.778% 140.351% no-repeat;
+	background-size: cover;
 }
 .thirdImg {
 	background: url(../img/Portfolio/thrd.png),
 		lightgray -77.129px -92px / 177.778% 140.351% no-repeat;
+	background-size: cover;
 }
 .LastImg {
 	background: url(../img/Portfolio/last.png),
 		lightgray -77.129px -92px / 177.778% 140.351% no-repeat;
+	background-size: cover;
 }
 .portfolio__cards--logo {
 	display: flex;
@@ -111,4 +116,123 @@
 .portfolio__btn {
 	z-index: 100;
 	position: relative;
+}
+
+.rotateBTN {
+	transform: rotate(180deg);
+}
+
+.active_slider {
+	width: 500px;
+}
+.UnActive__slider {
+	width: 270px;
+}
+.mobSlider {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	.portfolio {
+		margin: 0;
+		margin-top: 70px;
+	}
+	.portfolio__top {
+		display: block;
+	}
+	.portfolio__title {
+		display: block;
+		width: 80%;
+		font-size: 8vw;
+		font-style: bold;
+		font-weight: 600;
+		line-height: 60px;
+		margin-bottom: 15px;
+	}
+	.portfolio__text {
+		width: 100%;
+		font-size: 15px;
+		line-height: 26px;
+	}
+	.portfolio__btn, .portf__slider {
+		display: none;
+	}
+	.mobSlider {
+		display: block;
+	}
+	.mobSlider-inner {
+		display: flex;
+		justify-content: center;
+		margin-top: 2em;
+	}
+	.slide1-mob {
+		border-radius: 15%;
+		height: 550px;
+		/* width: 90%; */
+		background-image: url(../img/Mobail/MobSlider1111.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+	.slide1-mob--img {
+		margin-top: 80px;
+		margin-bottom: 200px;
+		border-radius: 0 20px 20px 0;
+		background-color: #D9FADD;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 164px;
+		height: 48px;
+	}
+	.slide1-mob--title {
+		color: #fff;
+		font-size: 3em;
+		padding-right: 30px;
+		text-transform: capitalize;
+		width: 430px;
+		padding-left: 30px;
+	}
+	.slide1-mob--text {
+		color: #fff;
+		/* width: 70%; */
+		font-size: 1.3em;
+		padding-left: 30px;
+		margin-top:20px;
+	}
+	.portfolio_fon {
+		display: none;
+	}
+	.mobSlider--btn {
+		margin-top: 30px;
+		display: flex;
+		justify-content: center;
+	}
+	.mobSlider--btnInner {
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+	}
+	.mobSlider--btn1, .mobSlider--btn2 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		width: 45px;
+		height: 45px;
+		background: rgba(120, 192, 129, 0.25);
+	}
+	.mobSlider-inner {
+		/* padding-left: 780px; */
+		display: flex;
+		justify-content: start;
+		gap: 60px;
+	}
+	.slide1-mob {
+		width: 500px;
+	}
+	.mobSlider-wrapper {
+		overflow: hidden;
+	}
+
 }

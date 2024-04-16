@@ -103,3 +103,63 @@
 	line-height: 26px;
 	width: 198px;
 }
+
+@media (max-width: 600px) {
+	.us {
+		margin: 0;
+		margin-top: 70px;
+		display: block;
+	}
+	.us__left__wrapper {
+		width: 100%;
+		height: 100%;
+		background: rgba(186, 255, 195, 0.25);
+		display: flex;
+		border-radius: 52px;
+		justify-content: center;
+		align-items: center;
+	}
+	.us__left {
+		width: 100%;
+		height: 100%;
+		padding: 0;
+		padding: 25px;
+		padding-bottom: 40px;
+		border-radius: 9vw;
+		background: #fff;
+		box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+	}
+	.us__leftTitle--text {
+    font-size: 8vw;
+    line-height: 50px;
+    text-transform: capitalize;
+	}
+	.us_left--text {
+		margin-top: 10px;
+		width: 90%;
+		font-size: 3vw;
+		line-height: 23px;
+	}
+	.us__right {
+		display: block;
+		position: relative;
+		margin-top: 30px;
+	}
+	.uscards-wrapper1 {
+		width: 100%;
+		display: flex;
+		justify-content: start;
+		margin-bottom: 30px;
+	}
+	.uscards-wrapper2 {
+		margin-bottom: 30px;
+		width: 100%;
+		display: flex;
+		justify-content: end;
+	}
+	.us__cards--title {
+		font-size: 5vw;
+		gap: 10px;
+	}
+	
+}

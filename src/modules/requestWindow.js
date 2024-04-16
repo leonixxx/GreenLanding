@@ -2,6 +2,7 @@ export function RequestWindow() {
 
 
     let btnConection = document.querySelectorAll('.Request__active-BTN'),
+        btn2Conect = document.querySelector('.btn2Mobali'),
         btnClose = document.querySelector('.Modal-main3btn__text'),
         body = document.body,
         modalWindow = document.querySelector('#request-Modal');
@@ -9,6 +10,7 @@ export function RequestWindow() {
     btnConection.forEach(item => {
         item.addEventListener('click', showModal)
     })
+    btn2Conect.addEventListener('click', showModal)
     btnClose.addEventListener('click', closeModal)
     document.addEventListener('keydown', function(event) {
             if (event.key === 'Escape') {

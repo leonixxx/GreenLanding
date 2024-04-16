@@ -5,7 +5,9 @@ import { Connection } from './modules/connection.js';
 import { ActiveBTN } from './modules/clientsBtn.js';
 import { RequestWindow } from './modules/requestWindow.js';
 import { fixedHeader } from './modules/fixedHeader.js';
-import { checkNumber } from './modules/CheckNumber.js';
+import { BigSlider } from './modules/CheckNumber.js';
+import { servicesChangeMob } from './modules/servicesChangeMob.js';
+import { portfMobSloder } from './modules/portfMobSloder.js';
 
 document.addEventListener('DOMContentLoaded', function() {
     servicesChange();
@@ -14,5 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ActiveBTN();
     RequestWindow();
     fixedHeader();
-    checkNumber();
+    BigSlider();
+    servicesChangeMob();
+    portfMobSloder();
 });

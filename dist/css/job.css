@@ -126,3 +126,70 @@
 	background-position: center center;
 	margin-bottom: 0;
 }
+@media (max-width: 600px) {
+	.job {
+		margin: 0;
+		margin-top: 70px;
+	}
+	.job__inner {
+		display: block;
+		width: 100%;
+	}
+	#first-card, #third-card, #five-card {
+		background-position:right;
+		margin: 0;
+		float: none;
+		height: 100%;
+	}
+	#second-card, #forst-card, #six-card {
+		background-position: left;
+		margin: 0;
+		float: none;
+		height: 100%;
+		text-align: right;
+	}
+	#first-card, #second-card, #third-card, #five-card, #forst-card, #six-card {
+		padding: 0;
+		margin-top: 30px;
+	}
+	#third-card {
+		padding-top: 30px;
+	}
+	.job__cards--title {
+		font-size: 7vw;
+	}
+	.job__cards-text {
+		display: block;
+		width: 90%;
+		font-size: 4vw;
+		line-height: 26px;
+	}
+	.kons {
+		width: 100%;
+		text-align: right;
+	}
+	.graf {
+		width: 100%;
+		text-align: none;
+	}
+	.right {
+		float: none;
+	}
+	.mont {
+		text-align: none;
+		width: 100%;
+	}
+	.first_step {
+		margin: 0;
+	}
+	.line1, .line2, .line3, .line4, .line5 {
+		display: none;
+	}
+	.job__end {
+		width: 100%;
+		height: 99px;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+	}
+}

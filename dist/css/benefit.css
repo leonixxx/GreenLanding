@@ -95,3 +95,54 @@
 .benefit__BigImg3 {
 	margin-top: -80px;
 }
+.benefitBTN--wrapper {
+	display: none;
+}
+
+
+@media (max-width: 600px) {
+	.benefit {
+		display: block;
+		margin-left: clamp(80px, 8.6vw, 135px);
+		margin: 0;
+		margin-top: 70px;
+	}
+	.benefit__title {
+		font-size: 7vw;
+		font-style: bold;
+		line-height: 11vw;
+	}
+	.benefit__icon {
+		gap: 1.7vw;
+		flex-wrap: wrap;
+	}
+	.benefit__menu {
+		font-size: 3.5vw;
+	}
+	.benefit__list {
+		width: 100%;
+	}
+	.benefit__text {
+		font-size: 3vw;
+		line-height: 5vw;
+		margin-top: 25px;
+		width: 100%;
+	}
+	.benefitBTN--wrapper {
+		width: 100%;
+		display: block;
+		display: flex;
+		justify-content: center;
+		margin-top: 45px;
+	}
+	.request__btn--conteiner {
+		font-size: 5vw;
+	}
+	.Application-benefits {
+		display: none;
+	}
+	.benefit__right {
+		display: none;
+	}
+	
+}
